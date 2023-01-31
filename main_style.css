@@ -1,0 +1,98 @@
+/*	Cards	*/
+.blog-post{
+	background-image	  : radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.1)), url('http://localhost/wordpress/wp-content/themes/startwordpress/post_bg.gif');
+	background-repeat     : repeat;
+}
+@media (min-width : 971px){
+	.blog-post{
+		margin            : .5%;
+		width             : 32%; /* ~970/3 */
+		min-height        : 400px;
+	}
+}
+@media (min-width : 641px) and (max-width: 970px){
+	.blog-post{
+		margin            : .8%;
+		width             : 48%; /* ~970/2 */
+		min-height        : 300px;
+	}
+}
+@media (max-width : 640px){
+	.blog-post{
+		margin            : 10px;
+		min-height        : 250px;
+	}
+}
+@media (any-pointer : coarse) {
+	.post-link{
+		text-decoration   : none;
+		color             : #b3b3b3;
+		opacity           : 0.95;
+		filter            : Alpha(opacity=95) /* IE8 and earlier */
+	}
+}
+.post-link :hover{
+	color                 : #4d4d4d;
+	opacity               : 1;
+    filter                : Alpha(opacity=100) /* IE8 and earlier */
+}
+@media (any-pointer : coarse) {
+	.blog-post, .blog-content {
+		border            : 1px solid #e5e5e5;
+		background-color  : #fff;
+		float             : left;
+		filter            : Alpha(opacity=95);
+		opacity           : 0.95;
+		-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0,.25);
+			box-shadow    : 0 5px 10px rgba(0, 0, 0,.25);
+		
+	}
+}
+.blog-post:hover{
+	-webkit-box-shadow    : 0 5px 10px rgba(0, 0, 0,.3);
+		    box-shadow    : 0 5px 10px rgba(0, 0, 0,.3);
+	opacity               : 1;
+	filter                : Alpha(opacity=100)
+}
+.blog-content{
+	max-width             : 970px;
+	min-height            : 100px;
+}
+.blog-post p, .blog-content p{
+	font-family           : "Corbel", Helvetica, Arial, Sans-Serif;
+	font-weight           : normal;
+	font-size             : 15px;
+	margin                : 5px;
+}
+.topo-post{
+	height                : 250px;
+	margin                :0;
+	padding               :0;
+	border-bottom         : 1px solid #e5e5e5;
+    background-repeat     : no-repeat;
+    background-size       : 100%;
+    background-position   : center;
+	position              :relative;
+}
+.topo-post h3{
+	background            : linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5));
+	width                 :100%;
+	text-align            :center;
+	color                 : #fff;
+	position              : absolute;
+	bottom                : 0;
+	margin                :0;
+	padding-top           :5px;
+}
+#tema-lista{
+	position: absolute;
+	top                  : 50%;
+    left                 : 50%;
+    margin-right         : -50%;
+    transform            : translate(-50%, -50%)
+}
+#temas-anc{
+	text-decoration	: none;
+	color:	#FFF;
+	font-size: 25px;
+}
