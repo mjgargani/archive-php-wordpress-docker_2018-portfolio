@@ -1,2 +1,2 @@
 # php-old-portfolio
-Portfolio em PHP, utilizando no ano de 2018
+Portfolio utilizando o WordPress (PHP), utilizando no ano de 2018
