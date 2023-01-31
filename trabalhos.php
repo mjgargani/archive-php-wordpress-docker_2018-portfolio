@@ -29,17 +29,22 @@
 		?>
 		
 			
-				<a class="trab-item-link" href="<?php echo get_bloginfo('wpurl')."/".$slug; ?>">
-					<li class="trab-item-lista">
-						<div class="trab-item-img-min" style="background-image: url('<?php echo get_bloginfo('template_directory')."/temas/".$slug ?>/thumbnail.jpg')">
-							<h3><?php echo $title; ?></h3>
-						</div>
-						<p><?php echo $content; ?></p>
-					</li>
-				</a>
+			<a class="trab-item-link" href="<?php echo get_bloginfo('wpurl')."/".$slug; ?>">
+				<li class="trab-item-lista">
+					<div class="trab-item-img-min" style="background-image: url('<?php echo get_bloginfo('template_directory')."/trabalhos/".$slug ?>/thumbnail.jpg')">
+						<h3><?php echo $title; ?></h3>
+					</div>
+					<p><?php echo $content; ?></p>
+				</li>
+			</a>
 			
 		<?php	}	?>
 		
 	</ul>
 	</div>
 </div>
+
+<a class="page-anc" id="color-inv" href="#main-bot-container">
+	<p>Sobre o autor </br>
+	<span class="anc-icon"></span></p>
+</a>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 	
-	<?php	if (is_front_page() || is_page( 'temas' )) { ?>
+	<?php	if (is_front_page() || is_page( 'trabalhos' )) { ?>
 		<section id="main-midtop-container">
 			
 			<div class="main-gen-container" id="logo" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/logo.png')"></div>
@@ -13,14 +13,14 @@
 		</section> <!-- /#main-midtop-container-->
 	<?php } ?>
 	
-	<article id="main-midbot-container" style="background-image:  url('<?php echo get_bloginfo('template_directory'); ?>/theme_bg.gif')">
+	<article id="main-midbot-container" <?php if (is_front_page() || is_page( 'trabalhos' )) : ?>style="background-image:  url('<?php echo get_bloginfo('template_directory'); ?>/theme_bg.gif')"><?php endif; ?>
 
 			<?php
 			
-			if (is_front_page() || is_page( 'temas' )) {
+			if (is_front_page() || is_page( 'trabalhos' )) {
 				get_template_part( 'trabalhos', get_post_format() ); 
 			}elseif (is_page('orion')){
-				get_template_part( '/temas/orion/orion', get_post_format() );
+				get_template_part( '/trabalhos/orion/orion', get_post_format() );
 			}elseif ( have_posts() ) { 
 				while ( have_posts() ) {
 					the_post(); 
@@ -31,14 +31,9 @@
 			}
 			?>
 			
-			<a class="page-anc" id="color-inv" href="#main-bot-container">
-				<p>Sobre o autor </br>
-				<span class="anc-icon"></span></p>
-			</a>
-			
 	</article> <!-- /#main-midbot-container-->
 
-	<?php	if (is_front_page() || is_page( 'temas' )) { ?>
+	<?php	if (is_front_page() || is_page( 'trabalhos' )) { ?>
 		<footer id="main-bot-container" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/sobre.jpg')">
 		
 			<div class="main-gen-container v-align-div">
@@ -54,6 +49,8 @@
 			</a>
 			
 		</footer><!-- /#main-bot-container -->
+		
+		<script src="<?php echo get_bloginfo('template_directory')."/scripts.js" ?>"></script>
 	<?php } ?>
 
 <?php get_footer(); ?>

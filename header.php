@@ -15,16 +15,22 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<style>
+	@font-face {
+		font-family: "mjgargani Lab";
+		src: url('<?php echo get_bloginfo('template_directory'); ?>/mjgargani_lab.woff');
+	}
+	</style>
 	<?php wp_head();?>
 	
-	<?php	if ((is_front_page() || is_page( 'temas' ) || have_posts()) && !is_page( array( 'orion', 'tema1', 'tema2' ))) { ?>
+	<?php	if ((is_front_page() || is_page( 'trabalhos' ) || have_posts()) && !is_page( array( 'orion', 'tema1', 'tema2' ))) { ?>
 		<link href="<?php echo get_bloginfo('template_directory'); ?>/main_style.css" rel="stylesheet">
-	<?php } ?>
+	<?php } ?>	
   </head>
 
   <body>
-  
-	<header class="main-top-container" id="mjgargs-main-menu" style="position: fixed; 	top: 0">
+   
+	<header class="main-top-container" id="mjgargs-main-menu">
 		
 		<div class="main-gen-container" style="overflow:hidden">
 			<div id="main-logo-icon"><a href="<?php echo get_bloginfo( 'wpurl' );?>"></a></div>

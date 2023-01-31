@@ -7,11 +7,6 @@ Tags: theme-design,original
 */
 
 /*	INICIAL	*/
-
-@font-face {
-	font-family: "mjgargani Lab";
-	src: url(http://localhost/wordpress/wp-content/themes/startwordpress/mjgargani_lab.woff);
-}
 html, body{
 	z-index:-1;
 	font-weight: normal;
@@ -37,13 +32,16 @@ html, body{
 /*	COLORS-SPECS	*/
 #mjgargs-main-menu{
 	z-index              : 2;
-	background-color     : #000
+	background-color     : #000;
+	position			 : fixed;
+	-webkit-box-shadow	 : 0 5px 10px rgba(0, 0, 0,.25);
+	box-shadow    		 : 0 5px 10px rgba(0, 0, 0,.25)
 }
 #main-midtop-container,
 #main-bot-container{
 	background-repeat    : no-repeat;
 	background-position  : center;
-	background-attachment: fixed;	
+	background-attachment: fixed	
 }
 #main-midtop-container,
 #main-midbot-container,
@@ -112,7 +110,7 @@ html, body{
 	font-weight: normal;
 	text-decoration: none;
 	height: inherit;
-	padding: 5px 0 1px 5px;
+	padding: 5px 0 1px 5px
 }
 
 /* MAINMENU-SUBMENU */

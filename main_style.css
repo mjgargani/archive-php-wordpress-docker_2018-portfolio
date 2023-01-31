@@ -107,7 +107,7 @@
 		margin			  : 1.3%
 	}
 	#main-midtop-container #logo{
-		background-size: 30%
+		background-size: 27%
 	}
 }
 @media (min-width : 641px) and (max-width: 970px){
@@ -119,7 +119,7 @@
 		margin			  : 1%
 	}
 	#main-midtop-container #logo{
-		background-size: 42%;
+		background-size: 38%;
 	}
 }
 @media (max-width : 640px){
@@ -131,7 +131,7 @@
 		margin			  : .5%
 	}
 	#main-midtop-container #logo{
-		background-size: 66%;
+		background-size: 58%;
 	}
 }
 #trab-logo{
