@@ -15,6 +15,28 @@ html, body{
 	width: 100%;
 	height: 100%
 }
+#fade{
+	z-index	: 3;
+	background-color: #000;
+	position: fixed;
+	display: table;
+	margin: inherit;
+	padding: inherit;
+	width: inherit;
+	height: inherit;
+	overflow: auto
+}
+#fade p{
+	font-family: "Corbel", Helvetica, Arial, Sans-Serif;
+	margin: inherit;
+	padding: inherit;
+	width: inherit;
+	height: inherit;
+	color: #fff;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle
+}
 
 /*	MAIN TOP-MID-BOT	*/
 
@@ -34,6 +56,8 @@ html, body{
 	z-index              : 2;
 	background-color     : #000;
 	position			 : fixed;
+	opacity           	 : 0.85;
+	filter               : Alpha(opacity=85);
 	-webkit-box-shadow	 : 0 5px 10px rgba(0, 0, 0,.25);
 	box-shadow    		 : 0 5px 10px rgba(0, 0, 0,.25)
 }
@@ -93,18 +117,19 @@ html, body{
 		-1px -1px #fff;
 }
 #main-logo-icon a{
-	font-size: 45px;
 	color: #06f;
+	font-size: 45px
 }
 #main-logo-title a{
-	font-size: 30px;
 	color: #000;
 	padding: 0;
+	font-size: 30px
 }
 #main-logo-icon,
-#main-logo-title{
+#main-logo-title,
+.main-page-nav{
 	float: left;
-	height: 40px;
+	height: 35px
 }
 #main-logo-title {
 	font-weight: normal;
@@ -117,15 +142,14 @@ html, body{
 .main-page-nav{
 	float: right;
 	text-decoration: none;
-	font-weight: 500;
 	padding: 0
 }
 .main-page-nav li {
     display: inline-block;
-    padding: 13px 11px 9px 11px;
+	padding: 13px 11px 9px 11px
 }
 .main-page-nav a {
-    color: #fff;
+    color: #fff
 }
 .menu{
 	padding: 0;

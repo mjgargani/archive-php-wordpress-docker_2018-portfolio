@@ -15,21 +15,24 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+	<?php wp_head();?>
 	<style>
 	@font-face {
 		font-family: "mjgargani Lab";
 		src: url('<?php echo get_bloginfo('template_directory'); ?>/mjgargani_lab.woff');
 	}
 	</style>
-	<?php wp_head();?>
-	
-	<?php	if ((is_front_page() || is_page( 'trabalhos' ) || have_posts()) && !is_page( array( 'orion', 'tema1', 'tema2' ))) { ?>
+	<?php	if ((is_front_page() || is_page( 'trabalhos' ) || have_posts()) && !is_page( array( 'orion'))) { ?>
 		<link href="<?php echo get_bloginfo('template_directory'); ?>/main_style.css" rel="stylesheet">
 	<?php } ?>	
   </head>
 
   <body>
+  
+	<div id="fade"><p><img src="<?php echo get_bloginfo('template_directory'); ?>/load_icon.gif"></p></div>
    
+	<?php	if ((is_front_page() || is_page( 'trabalhos' ) || have_posts()) && !is_page( array( 'orion'))) { ?>
 	<header class="main-top-container" id="mjgargs-main-menu">
 		
 		<div class="main-gen-container" style="overflow:hidden">
@@ -45,3 +48,4 @@
 		</div>
 		
 	</header>
+	<?php } ?>
