@@ -3,7 +3,7 @@
 	<?php	if (is_front_page() || is_page( 'trabalhos' )) { ?>
 		<section id="main-midtop-container">
 			
-			<div id="logo" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/logo.png')">teste</div>
+			<div id="logo" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/logo.png')"></div>
 			
 			<a class="page-anc" href="#main-midbot-container">
 				<p><?php	echo get_post_field('post_content', 65);	?> </br>

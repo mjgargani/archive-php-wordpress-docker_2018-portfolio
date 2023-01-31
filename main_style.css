@@ -93,9 +93,14 @@
 	background-position: center;
 	overflow: auto
 }
-#scroll-hint{
+#scroll-hint p{
 	width: 100%;
+	color: #777;
+	font-size: 14px;
 	text-align: center
+}
+#scroll-hint p:hover{
+	color: #444
 }
 @media (min-width : 971px){
 	#caixa-trabalhos{
