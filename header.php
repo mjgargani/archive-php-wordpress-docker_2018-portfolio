@@ -22,15 +22,12 @@
 		font-family: "mjgargani Lab";
 		src: url('<?php echo get_bloginfo('template_directory'); ?>/mjgargani_lab.woff');
 	}
-	</style>
-	<?php	if ((is_front_page() || is_page( 'trabalhos' ) || have_posts()) && !is_page( array( 'orion'))) { ?>
-		<link href="<?php echo get_bloginfo('template_directory'); ?>/main_style.css" rel="stylesheet">
-	<?php } ?>	
+	</style>	
   </head>
 
   <body>
   
-	<div id="fade"><p><img src="<?php echo get_bloginfo('template_directory'); ?>/load_icon.gif"></p></div>
+	<div id="fade"></div>
    
 	<?php	if ((is_front_page() || is_page( 'trabalhos' ) || have_posts()) && !is_page( array( 'orion'))) { ?>
 	<header class="main-top-container" id="mjgargs-main-menu">

@@ -54,7 +54,7 @@
 			
 		<?php	//}	?>
 		
-		<a class="trab-item-link" target="_blank" href="<?php echo get_bloginfo('template_directory')."/portfolio.pdf"; ?>">
+		<a class="trab-item-link" target="_blank" href="https://1drv.ms/b/s!Apm-rzDzLcXHibEouc3rW8hPGiHwtA">
 				<li class="trab-item-lista">
 					<div class="trab-item-img-min" style="background-image: url('<?php echo get_bloginfo('template_directory') ?>/portfolio.jpg')">
 						<h3>Portfólio</h3>

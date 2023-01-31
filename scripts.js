@@ -131,22 +131,14 @@
 
 	});
 	
-	//fade-in_out and ad-limit
-	var div_ad = "img[alt='000webhost logo']";
-	
+	//fade-in_out	
 	$(window).on( "load", function() {
 		$("#logo").css({
 			"height" : $( window ).height()+"px"
 		});
 		$(this).testarPos();
 		$("#fade").fadeOut( "fast" );
-		$(div_ad).css("display","none");
     });
-	
-	$(window).bind('beforeunload', function(event) {
-		$("#fade").fadeIn( "fast" );
-		$(div_ad).fadeIn( "slow" );
-	});
 	
 	//animar botoes
 	if ($( window ).width() > 640) {
@@ -161,15 +153,5 @@
 			if ($( window ).width() > 640){ $(this).animate({ opacity: "0.9" },200); }
 		});
 	}
-	
-	//redimensionar quando necessario
-	$( window ).resize(function() {
-		$("#main-midtop-container,#main-midbot-container,#main-bot-container").css({
-			"width" : $( window ).width()+"px"
-		});
-		$("#logo").css({
-			"height" : $( window ).height()+"px"
-		});
-	});
 	
 })( jQuery );

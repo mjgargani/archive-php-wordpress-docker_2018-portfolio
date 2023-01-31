@@ -17,7 +17,7 @@ html, body{
 }
 #fade{
 	z-index	: 3;
-	background-color: #000;
+	background-color: #d4c26a;
 	position: fixed;
 	display: table;
 	margin: inherit;

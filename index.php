@@ -34,7 +34,7 @@
 	</article> <!-- /#main-midbot-container-->
 
 	<?php	if (is_front_page() || is_page( 'trabalhos' )) { ?>
-		<footer id="main-bot-container" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/sobre.jpg')">
+		<footer id="main-bot-container" style="background-image: url('<?php echo get_bloginfo('template_directory'); ?>/sobre.png')">
 		
 			<div class="main-gen-container v-align-div">
 				<div class="outro-conteudo">
@@ -49,8 +49,6 @@
 			</a>
 			
 		</footer><!-- /#main-bot-container -->
-		
-		<script src="<?php echo get_bloginfo('template_directory')."/scripts.js" ?>"></script>
 	<?php } ?>
 
 <?php get_footer(); ?>
