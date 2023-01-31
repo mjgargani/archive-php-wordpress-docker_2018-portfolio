@@ -24,35 +24,18 @@
 
   <body>
   
-	<?php	if (is_front_page() || is_page( 'temas' )) { ?>
-		<section id="main-midtop-container">
-				<div id="logo"></div>
-				<p><?php	echo get_post_field('post_content', 65);	?></br>
-				<a id="temas-anc" href="#temas">ﬅ</a></p>
-		</section> <!-- /#main-midtop-container-->
-	<?php } ?>
-	
-	<?php	if (is_front_page() || is_page( 'temas' )) { ?>
-		<header class="main-top-container" id="main-menu" style="position: fixed; 	top: 0">
-	<?php	}	else	{	?>
-		<header class="main-top-container" id="main-menu" style="position: fixed; 	top: 0">
-	<?php	}	?>
-	
+	<header class="main-top-container" id="mjgargs-main-menu" style="position: fixed; 	top: 0">
+		
 		<div class="main-gen-container" style="overflow:hidden">
 			<div id="main-logo-icon"><a href="<?php echo get_bloginfo( 'wpurl' );?>"></a></div>
 			<div id="main-logo-title"><a href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></div>
 			<nav class="main-page-nav">
-				<?php wp_list_pages( 'sort_order=desc&depth=1&title_li=' ); ?>
+				<?php
+				wp_nav_menu( array( 
+					'theme_location' => 'menu-superior', 
+					'container_class' => 'main-page-nav' ) ); 
+				?>
 			</nav>
 		</div>
 		
 	</header>
-	<header class="main-top-container" id="main-submenu">
-	
-		<div class="main-gen-container">
-			<nav class="main-page-nav">
-				<?php wp_list_pages( 'depth=1&title_li=&child_of=65' ); ?>
-			</nav>
-		</div><!-- /.main-gen-container-->
-	
-	</header><!-- /#main-top-container-->

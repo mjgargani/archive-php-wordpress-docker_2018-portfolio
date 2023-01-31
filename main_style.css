@@ -1,98 +1,166 @@
+/* Divs alinhado na vertical */
+.outro-conteudo,
+.v-align-div{
+	display		  : table-cell;
+	vertical-align: middle;
+	width		  : 100%;
+	padding		  : 5%
+}
+
 /*	Cards	*/
-.blog-post{
-	background-image	  : radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.1)), url('http://localhost/wordpress/wp-content/themes/startwordpress/post_bg.gif');
-	background-repeat     : repeat;
+#caixa-trabalhos{
+	position: relative;
+	width: inherit
 }
-@media (min-width : 971px){
-	.blog-post{
-		margin            : .5%;
-		width             : 32%; /* ~970/3 */
-		min-height        : 400px;
-	}
+#lista-trabalhos{
+	position: absolute;
+	width: 100%;
+	height: 350px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch
 }
-@media (min-width : 641px) and (max-width: 970px){
-	.blog-post{
-		margin            : .8%;
-		width             : 48%; /* ~970/2 */
-		min-height        : 300px;
-	}
+.trab-item-lista{
+	display: inline-block;
+	vertical-align : top;
+	white-space: normal
 }
-@media (max-width : 640px){
-	.blog-post{
-		margin            : 10px;
-		min-height        : 250px;
-	}
+
+.trab-item-link {
+	text-decoration   : none;
+	opacity           : 0.95;
+	filter            : Alpha(opacity=95) /* IE8 and earlier */
 }
-@media (any-pointer : coarse) {
-	.post-link{
-		text-decoration   : none;
-		color             : #b3b3b3;
-		opacity           : 0.95;
-		filter            : Alpha(opacity=95) /* IE8 and earlier */
-	}
-}
-.post-link :hover{
-	color                 : #4d4d4d;
+.trab-item-link:hover {
 	opacity               : 1;
     filter                : Alpha(opacity=100) /* IE8 and earlier */
 }
-@media (any-pointer : coarse) {
-	.blog-post, .blog-content {
-		border            : 1px solid #e5e5e5;
-		background-color  : #fff;
-		float             : left;
-		filter            : Alpha(opacity=95);
-		opacity           : 0.95;
-		-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0,.25);
-			box-shadow    : 0 5px 10px rgba(0, 0, 0,.25);
-		
-	}
+
+.trab-item-lista {	
+	background-repeat : repeat;
+	width             : 40%;
+	min-height        : 300px;
 }
-.blog-post:hover{
+.trab-item-lista, .outro-conteudo {
+	border            : 1px solid #e5e5e5;
+	background-color  : #fff;
+	filter            : Alpha(opacity=95);
+	opacity           : 0.95;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0,.25);
+		box-shadow    : 0 5px 10px rgba(0, 0, 0,.25);
+		
+}
+.trab-item-lista:hover {
 	-webkit-box-shadow    : 0 5px 10px rgba(0, 0, 0,.3);
 		    box-shadow    : 0 5px 10px rgba(0, 0, 0,.3);
 	opacity               : 1;
 	filter                : Alpha(opacity=100)
 }
-.blog-content{
-	max-width             : 970px;
-	min-height            : 100px;
-}
-.blog-post p, .blog-content p{
+.trab-item-lista p, .outro-conteudo p{
 	font-family           : "Corbel", Helvetica, Arial, Sans-Serif;
 	font-weight           : normal;
 	font-size             : 15px;
 	margin                : 5px;
 }
-.topo-post{
+
+.trab-item-img-min {
 	height                : 250px;
-	margin                :0;
-	padding               :0;
+	margin                : 0;
+	padding               : 0;
 	border-bottom         : 1px solid #e5e5e5;
     background-repeat     : no-repeat;
     background-size       : 100%;
     background-position   : center;
-	position              :relative;
+	position              : relative;
 }
-.topo-post h3{
+.trab-item-img-min h3{ /* legenda */
 	background            : linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5));
-	width                 :100%;
-	text-align            :center;
+	width                 : 100%;
+	text-align            : center;
 	color                 : #fff;
 	position              : absolute;
 	bottom                : 0;
-	margin                :0;
-	padding-top           :5px;
+	margin                : inherit;
+	padding-top           : 5px;
+	font-weight			  : normal
 }
-#tema-lista{
-	position: absolute;
-	top                  : 50%;
-    left                 : 50%;
-    margin-right         : -50%;
-    transform            : translate(-50%, -50%)
+
+/* Logo */
+#logo{
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-width: inherit;
+	height: 100%;
+	overflow: auto
 }
-#temas-anc{
-	text-decoration	: none;
-	color:	#FFF;
-	font-size: 25px;
+@media (min-width : 971px){
+	#caixa-trabalhos{
+		height: 60%
+	}	
+	.trab-item-lista {	
+		width             : 30%;
+		margin			  : 1.3%
+	}
+	#main-midtop-container #logo{
+		background-size: 30%
+	}
+}
+@media (min-width : 641px) and (max-width: 970px){
+	#caixa-trabalhos{
+		height: 55%
+	}
+	.trab-item-lista {	
+		width             : 47%;
+		margin			  : 1%
+	}
+	#main-midtop-container #logo{
+		background-size: 42%;
+	}
+}
+@media (max-width : 640px){
+	#caixa-trabalhos{
+		height: 50%
+	}
+	.trab-item-lista {	
+		width             : 98%;
+		margin			  : .5%
+	}
+	#main-midtop-container #logo{
+		background-size: 66%;
+	}
+}
+#trab-logo{
+	width: 100%;
+}
+
+/* Âncoras */
+
+.page-anc{
+	position              : absolute;
+	display				  : block;
+	left				  : 0;
+	bottom                : 0;
+	margin                : inherit;
+	padding				  :	inherit;
+	width                 : 100%;
+	background            : linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5));
+	text-align            : center;
+	font-size 			  : 15px;
+	text-decoration		  :	none;
+	color                 : #fff
+}
+.page-anc p{
+	margin-bottom		  : 0;
+}
+#color-inv {
+	background            : linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.5));
+	color                 : #000
+}
+.anc-icon{
+	font-size 			  : 30px;
 }

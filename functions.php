@@ -8,4 +8,9 @@
 	}
 	add_action( 'wp_enqueue_scripts', 'fila_scripts' );
 	
+	function wpb_custom_new_menu() {
+	  register_nav_menu('menu-superior',__( 'Menu Superior' ));
+	}
+	add_action( 'init', 'wpb_custom_new_menu' );
+	
 ?>
