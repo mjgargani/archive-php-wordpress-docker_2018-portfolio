@@ -1,6 +1,6 @@
 <div class="main-gen-container v-align-div">
 	<p align="center">
-		<img id="trab-logo" src="<?php echo get_bloginfo('template_directory'); ?>/trabalhos.png')"></img>
+		<img id="trab-logo" src="<?php echo get_bloginfo('template_directory'); ?>/trabalhos.png"></img>
 	</p>
 	<div id="scroll-hint"><p>Role para ver as opções</p></div>
 	
@@ -12,47 +12,6 @@
 	
 	<div id="caixa-trabalhos">
 	<ul id="lista-trabalhos">
-		
-		<?php
-			/*$args = array(
-				'sort_order' => 'asc',
-				'sort_column' => 'post_title',
-				'exclude' => '29,30,31',
-				'child_of' => 65,
-				'post_type' => 'page',
-				'post_status' => 'publish'
-			);  
-			$pages = get_pages($args); 
-			
-			foreach ($pages as $page_data) {
-				$slug = $page_data->post_name; 
-				$content = apply_filters("the_content", $page_data->post_content); 
-				$title = $page_data->post_title;
-
-				//limitar texto
-				$content = strip_tags($content);
-				if (strlen($content) > 75) {
-					// truncate string
-					$stringCut = substr($content, 0, 75);
-					$endPoint = strrpos($stringCut, ' ');
-
-					//if the string doesn't contain any space then it will cut without word basis.
-					$content = $endPoint? substr($stringCut, 0, $endPoint):substr($stringCut, 0);
-					$content .= '...';
-				}*/
-		?>
-		
-			
-			<!--<a class="trab-item-link" href="<?php //echo get_bloginfo('wpurl')."/".$slug; ?>">
-				<li class="trab-item-lista">
-					<div class="trab-item-img-min" style="background-image: url('<?php //echo get_bloginfo('template_directory')."/trabalhos/".$slug ?>/thumbnail.jpg')">
-						<h3><?php //echo $title; ?></h3>
-					</div>
-					<p><?php //echo $content; ?></p>
-				</li>
-			</a>-->
-			
-		<?php	//}	?>
 		
 		<a class="trab-item-link" target="_blank" href="https://1drv.ms/b/s!Apm-rzDzLcXHibEouc3rW8hPGiHwtA">
 				<li class="trab-item-lista">

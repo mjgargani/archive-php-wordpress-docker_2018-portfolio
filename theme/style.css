@@ -7,16 +7,18 @@ Tags: theme-design,original
 */
 
 /*	INICIAL	*/
-html, body{
-	z-index:-1;
+html,
+body {
+	z-index: -1;
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	height: 100%
 }
-#fade{
-	z-index	: 3;
+
+#fade {
+	z-index: 3;
 	background-color: #d4c26a;
 	position: fixed;
 	display: table;
@@ -26,7 +28,8 @@ html, body{
 	height: inherit;
 	overflow: auto
 }
-#fade p{
+
+#fade p {
 	font-family: "Corbel", Helvetica, Arial, Sans-Serif;
 	margin: inherit;
 	padding: inherit;
@@ -40,62 +43,66 @@ html, body{
 
 /*	MAIN TOP-MID-BOT	*/
 
-.main-top-container, 
+.main-top-container,
 #main-midtop-container,
 #main-midbot-container,
-#main-bot-container{
-	font-family       : "mjgargani Lab";
-	z-index           : 0;
-	position          : relative;
-	display           : table;
-	width             : inherit
+#main-bot-container {
+	font-family: "mjgargani Lab";
+	z-index: 0;
+	position: relative;
+	display: table;
+	width: inherit
 }
 
 /*	COLORS-SPECS	*/
-#mjgargs-main-menu{
-	z-index              : 2;
-	background-color     : #000;
-	position			 : fixed;
-	opacity           	 : 0.85;
-	filter               : Alpha(opacity=85);
-	-webkit-box-shadow	 : 0 5px 10px rgba(0, 0, 0,.25);
-	box-shadow    		 : 0 5px 10px rgba(0, 0, 0,.25)
+#mjgargs-main-menu {
+	z-index: 2;
+	background-color: #000;
+	position: fixed;
+	opacity: 0.85;
+	filter: Alpha(opacity=85);
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .25)
 }
+
 #main-midtop-container,
-#main-bot-container{
-	background-repeat    : no-repeat;
-	background-position  : center;
-	background-attachment: fixed	
+#main-bot-container {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed
 }
+
 #main-midtop-container,
 #main-midbot-container,
 #main-bot-container,
-.main-gen-container{
-	height           	 : 100%;
-	overflow             : auto
+.main-gen-container {
+	height: 100%;
+	overflow: hidden
 }
-#main-midtop-container{	
-	background-image     : radial-gradient(rgba(212, 194, 106,1), rgba(212, 194, 106,1), rgba(170, 151, 57,1));
-	background-size      : 100%
+
+#main-midtop-container {
+	background-image: radial-gradient(rgba(212, 194, 106, 1), rgba(212, 194, 106, 1), rgba(170, 151, 57, 1));
+	background-size: 100%
 }
-#main-midbot-container{
-	background-repeat   : repeat
+
+#main-midbot-container {
+	background-repeat: repeat
 }
-#main-bot-container{
-	background-color	 : #000;
-	background-size      : 200%;
-	-webkit-box-shadow	: 0 -5px 10px rgba(0, 0, 0,.25);
-		box-shadow    	: 0 -5px 10px rgba(0, 0, 0,.25)
+
+#main-bot-container {
+	background-color: #000;
+	background-size: 200%;
+	-webkit-box-shadow: 0 -5px 10px rgba(0, 0, 0, .25);
+	box-shadow: 0 -5px 10px rgba(0, 0, 0, .25)
 }
 
 /*	CONTAINER GENÉRICO	*/
 
 .main-gen-container {
-	z-index				  : 1;
-	width				  : 90%;
-	padding				  : 0 5%;
-	height         	   	  : inherit;
-	overflow              : auto
+	z-index: 1;
+	width: 90%;
+	padding: 0 5%;
+	height: inherit;
 }
 
 /*
@@ -103,12 +110,13 @@ html, body{
  */
 #main-logo-icon a,
 #main-logo-title a,
-.main-page-nav a{
-	text-decoration:none
+.main-page-nav a {
+	text-decoration: none
 }
+
 #main-logo-icon a,
-#main-logo-title a{
-	text-shadow: 
+#main-logo-title a {
+	text-shadow:
 		2px 2px #fff,
 		1.5px 1.5px #fff,
 		1px 1px #fff,
@@ -116,21 +124,25 @@ html, body{
 		-0.5px -0.5px #fff,
 		-1px -1px #fff;
 }
-#main-logo-icon a{
+
+#main-logo-icon a {
 	color: #06f;
 	font-size: 45px
 }
-#main-logo-title a{
+
+#main-logo-title a {
 	color: #000;
 	padding: 0;
 	font-size: 30px
 }
+
 #main-logo-icon,
 #main-logo-title,
-.main-page-nav{
+.main-page-nav {
 	float: left;
 	height: 35px
 }
+
 #main-logo-title {
 	font-weight: normal;
 	text-decoration: none;
@@ -139,19 +151,22 @@ html, body{
 }
 
 /* MAINMENU-SUBMENU */
-.main-page-nav{
+.main-page-nav {
 	float: right;
 	text-decoration: none;
 	padding: 0
 }
+
 .main-page-nav li {
-    display: inline-block;
+	display: inline-block;
 	padding: 13px 11px 9px 11px
 }
+
 .main-page-nav a {
-    color: #fff
+	color: #fff
 }
-.menu{
+
+.menu {
 	padding: 0;
 	margin: 0
 }

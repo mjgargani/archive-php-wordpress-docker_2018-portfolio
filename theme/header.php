@@ -29,7 +29,6 @@
   
 	<div id="fade"></div>
    
-	<?php	if ((is_front_page() || is_page( 'trabalhos' ) || have_posts()) && !is_page( array( 'orion'))) { ?>
 	<header class="main-top-container" id="mjgargs-main-menu">
 		
 		<div class="main-gen-container" style="overflow:hidden">
@@ -45,4 +44,3 @@
 		</div>
 		
 	</header>
-	<?php } ?>
