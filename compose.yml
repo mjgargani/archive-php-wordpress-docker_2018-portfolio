@@ -15,6 +15,13 @@ services:
     volumes:
       - wordpress:/var/www/html
       - ./theme:/var/www/html/wp-content/themes/mjgargani-style
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "lsof", "-t", "-i:8080"]
+      timeout: 10s
+      retries: 5
 
   db:
     image: mysql:5.7
@@ -25,6 +32,10 @@ services:
     volumes:
       - db:/var/lib/mysql
       - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 5
 
 volumes:
   wordpress:

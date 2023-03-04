@@ -1,5 +1,7 @@
 # php-wp-old-portfolio
 
+![thumbnail](thumbnail.gif)
+
 ## Descrição / Description
 
 Tema para o WordPress (PHP);
