@@ -29,3 +29,25 @@ After starting the containers, use the browser to access the address `http://loc
 ```bash
 docker compose down -v
 ```
+
+## Gerar página estática / Generate static page
+
+Dê ao script `build static`, permissão para execução.
+
+Give the `build static` script execute permission.
+
+```bash
+chmod +x ./build_static.sh
+```
+
+Execute o script. Ele deve subir o `compose`, baixar a versão estática da página e derrubar os containers.
+
+Run the script. It should run `compose`, download the static version of the page and tear down the containers.
+
+```bash
+sh ./build_static.sh
+```
+
+A página poderá ser acessada em `./static/index.html`.
+
+The page can be accessed from `./static/index.html`.
