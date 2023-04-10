@@ -1,6 +1,6 @@
 # php-wp-old-portfolio
 
-![thumbnail](thumbnail.gif)
+![thumbnail](thumbnail.webp)
 
 ## Descrição / Description
 
