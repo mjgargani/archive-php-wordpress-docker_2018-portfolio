@@ -4,7 +4,7 @@
 
 > 🌐 [https://2018.gargani.dev/](https://2018.gargani.dev/)
 
-![latest-version](https://img.shields.io/github/v/tag/mjgargani/archive-php-wp_2018-portfolio) ![deploy-check](https://github.com/mjgargani/archive-php-wp_2018-portfolio/actions/workflows/static.yml/badge.svg)
+![latest-version](https://img.shields.io/github/v/release/mjgargani/archive-php-wp_2018-portfolio) ![deploy-check](https://github.com/mjgargani/archive-php-wp_2018-portfolio/actions/workflows/static.yml/badge.svg)
 
 ## Descrição / Description
 
